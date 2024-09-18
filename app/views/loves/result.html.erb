@@ -1,6 +1,9 @@
 <main>
   <div>
-    <h1><%= @result[0] %>の推し度は<%= @result[1] %>%です！</h1>
+    <h1><%= @result[15] %>の推し度は<%= @result[16] %>%です！</h1>
+    <% (0..14).each do |i| %>
+      <p>問題<%= "#{i + 1}" %>: <%= @result[i] %></p>
+    <% end %>
   </div>
   <%= link_to root_path do %>
   <button class="btn btn-secondary w-32 tracking-[.25em]">TOPに戻る</button>
