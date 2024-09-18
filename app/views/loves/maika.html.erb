@@ -1,0 +1,121 @@
+<main>
+  <div>
+    <h1>佐々木舞香クイズ</h1>
+    <p>15個の問題に答えて推し度を知ろう</p>
+    <%= form_with url:love_create_path, method: :post do %>
+    <div>
+      <label>問題1: 担当カラーは何色？</label><br>
+      <label><%= radio_button_tag 'answers[q1]', 'yes' %>白</label>
+      <label><%= radio_button_tag 'answers[q1]', 'no' %>緑</label>
+      <label><%= radio_button_tag 'answers[q1]', 'no' %>紫</label>
+      <label><%= radio_button_tag 'answers[q1]', 'no' %>薄めピンク</label>
+    </div>
+    <div>
+      <label>問題2: センター曲は？</label><br>
+      <label><%= radio_button_tag 'answers[q2]', 'no' %>ラブロケ</label>
+      <label><%= radio_button_tag 'answers[q2]', 'no' %>ウィークエンドシトロン</label>
+      <label><%= radio_button_tag 'answers[q2]', 'no' %>呪って呪って</label>
+      <label><%= radio_button_tag 'answers[q2]', 'yes' %>絶対アイドル辞めないで</label>
+    </div>
+    <div>
+      <label>問題3: 血液型は？</label><br>
+      <label><%= radio_button_tag 'answers[q3]', 'yes' %>A型</label>
+      <label><%= radio_button_tag 'answers[q3]', 'no' %>B型</label>
+      <label><%= radio_button_tag 'answers[q3]', 'no' %>O型</label>
+      <label><%= radio_button_tag 'answers[q3]', 'no' %>AB型</label>
+    </div>
+    <div>
+      <label>問題4: 特技は？</label><br>
+      <label><%= radio_button_tag 'answers[q4]', 'no' %>イラスト</label>
+      <label><%= radio_button_tag 'answers[q4]', 'yes' %>絡まったネックレス絶対解ける</label>
+      <label><%= radio_button_tag 'answers[q4]', 'no' %>目分量料理</label>
+      <label><%= radio_button_tag 'answers[q4]', 'no' %>秒数を頭の中で測る</label>
+    </div>
+    <div>
+      <label>問題5: ヒロインズの他己紹介では誰の歌詞を担当した？</label><br>
+      <label><%= radio_button_tag 'answers[q5]', 'no' %>野口 衣織</label>
+      <label><%= radio_button_tag 'answers[q5]', 'no' %>齋藤 樹愛羅</label>
+      <label><%= radio_button_tag 'answers[q5]', 'yes' %>髙松 瞳</label>
+      <label><%= radio_button_tag 'answers[q5]', 'no' %>瀧脇 笙古</label>
+    </div>
+
+    <h2>王シリーズより(2022/02/22配信)</h2>
+    <div>
+      <label>問題6: 好きなキャラクターは？</label><br>
+      <label><%= radio_button_tag 'answers[q6]', 'no' %>弥生 春</label>
+      <label><%= radio_button_tag 'answers[q6]', 'no' %>水無月 涙</label>
+      <label><%= radio_button_tag 'answers[q6]', 'no' %>神無月 郁</label>
+      <label><%= radio_button_tag 'answers[q6]', 'yes' %>霜月 隼</label>
+    </div>
+    <div>
+      <label>問題7: 昔お母さんに叱られたことは？</label><br>
+      <label><%= radio_button_tag 'answers[q7]', 'no' %>勉強しなさい</label>
+      <label><%= radio_button_tag 'answers[q7]', 'no' %>ちゃんとしゃべりなさい</label>
+      <label><%= radio_button_tag 'answers[q7]', 'yes' %>学校に行きなさい</label>
+      <label><%= radio_button_tag 'answers[q7]', 'no' %>早く寝なさい</label>
+    </div>
+    <div>
+      <label>問題8: 小さな自慢は？</label><br>
+      <label><%= radio_button_tag 'answers[q8]', 'no' %>手先が器用</label>
+      <label><%= radio_button_tag 'answers[q8]', 'yes' %>初めてのことでもそつなくこなせる</label>
+      <label><%= radio_button_tag 'answers[q8]', 'no' %>お母さんみたいに家庭的</label>
+      <label><%= radio_button_tag 'answers[q8]', 'no' %>人にやさしい</label>
+    </div>
+    <div>
+      <label>問題9: 髙松 瞳とデートに！何処に行く？</label><br>
+      <label><%= radio_button_tag 'answers[q9]', 'yes' %>温泉</label>
+      <label><%= radio_button_tag 'answers[q9]', 'no' %>遊園地</label>
+      <label><%= radio_button_tag 'answers[q9]', 'no' %>アスレチック</label>
+      <label><%= radio_button_tag 'answers[q9]', 'no' %>映画</label>
+    </div>
+    <div>
+      <label>問題10: 人生で一番笑った思い出は？</label><br>
+      <label><%= radio_button_tag 'answers[q10]', 'no' %>樹愛羅が転んだ</label>
+      <label><%= radio_button_tag 'answers[q10]', 'no' %>友達が角に足をぶつけた</label>
+      <label><%= radio_button_tag 'answers[q10]', 'no' %>樹愛羅が大遅刻をした</label>
+      <label><%= radio_button_tag 'answers[q10]', 'yes' %>友達に鳥のフンが落ちた</label>
+    </div>
+    <div>
+      <label>問題11: 無敵カワイイ餃子女王決定戦で、餃子以外にただ自分が食べたくて焼いた食べ物は？</label><br>
+      <label><%= radio_button_tag 'answers[q11]', 'no' %>豊潤</label>
+      <label><%= radio_button_tag 'answers[q11]', 'yes' %>香燻</label>
+      <label><%= radio_button_tag 'answers[q11]', 'no' %>シャウエッセン</label>
+      <label><%= radio_button_tag 'answers[q11]', 'no' %>アルトバイエルン</label>
+    </div>
+    <div>
+      <label>問題12: ダメだとわかっていても辞められない甘くて危うい好きなことは？</label><br>
+      <label><%= radio_button_tag 'answers[q12]', 'no' %>ニンニクマシが好き</label>
+      <label><%= radio_button_tag 'answers[q12]', 'no' %>UFOキャッチャーが好き</label>
+      <label><%= radio_button_tag 'answers[q12]', 'yes' %>そのまま食べる塩が好き</label>
+      <label><%= radio_button_tag 'answers[q12]', 'no' %>カップ麺を食べて、すぐ寝るのが好き</label>
+    </div>
+    <div>
+      <label>問題13: あの子コンプレックスで齋藤なぎさのパートを担当することになった歌詞は？</label><br>
+      <label><%= radio_button_tag 'answers[q13]', 'no' %>特別じゃないから あんな顔 見せないでよ</label>
+      <label><%= radio_button_tag 'answers[q13]', 'no' %>真っ白に戻して</label>
+      <label><%= radio_button_tag 'answers[q13]', 'no' %>運命じゃなかった2人は</label>
+      <label><%= radio_button_tag 'answers[q13]', 'yes' %>愛なんて もういらないよ</label>
+    </div>
+    <div>
+      <label>問題14: 絶対に辞めないで欲しいことは？</label><br>
+      <label><%= radio_button_tag 'answers[q14]', 'no' %>絶対 指原さんからのシャインマスカットの贈り物 辞めないで</label>
+      <label><%= radio_button_tag 'answers[q14]', 'no' %>絶対 ハンバーガーのキッチンカー 辞めないで</label>
+      <label><%= radio_button_tag 'answers[q14]', 'no' %>絶対 さなつんのモノマネ 辞めないで</label>
+      <label><%= radio_button_tag 'answers[q14]', 'yes' %>絶対 愛犬、隣で寝るの 辞めないで</label>
+    </div>
+    <div>
+      <label>問題15: イコラブクロスラブの魂で叫べ！イコラブロックという企画で斎藤 樹愛羅に向けて言った魂の叫びは？</label><br>
+      <label><%= radio_button_tag 'answers[q15]', 'no' %>鶏肉と豚肉の違いがわからないこと</label>
+      <label><%= radio_button_tag 'answers[q15]', 'yes' %>マグロに火を通すとサンマになると思っている</label>
+      <label><%= radio_button_tag 'answers[q15]', 'no' %>大根に火を通すとカブになると思っている</label>
+      <label><%= radio_button_tag 'answers[q15]', 'no' %>フライパンを食べ物だと思っている</label>
+    </div>
+    <div class='hidden'>
+      <label><%= radio_button_tag 'answers[q16]', '佐々木 舞香', checked:'checked' %>佐々木 舞香</label>
+    </div>
+    <div>
+      <%= submit_tag '回答する', class:'mr-5 rounded-md btn bg-yellow-600 text-white py-5 px-3 hover:bg-yellow-600 hover:opacity-50' %>
+    </div>
+    <% end %>
+  </div>
+</main>

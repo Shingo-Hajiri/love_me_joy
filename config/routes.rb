@@ -14,4 +14,6 @@ Rails.application.routes.draw do
 
   get "love/members", to: "loves#members", as: "love_members"
   post "love/create", to: "loves#create", as: "love_create"
+  get "love/maika", to: "loves#maika", as: "love_maika"
+  get "love/result", to: "loves#result", as: "love_result"
 end
