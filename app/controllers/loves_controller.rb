@@ -26,21 +26,21 @@ class LovesController < ApplicationController
 
   def scoring(answers)
     score = 0
-    score += 5 if answers[:q1] == '⚪︎'
-    score += 5 if answers[:q2] == '⚪︎'
-    score += 5 if answers[:q3] == '⚪︎'
-    score += 5 if answers[:q4] == '⚪︎'
-    score += 5 if answers[:q5] == '⚪︎'
-    score += 7 if answers[:q6] == '⚪︎'
-    score += 7 if answers[:q7] == '⚪︎'
-    score += 7 if answers[:q8] == '⚪︎'
-    score += 7 if answers[:q9] == '⚪︎'
-    score += 7 if answers[:q10] == '⚪︎'
-    score += 8 if answers[:q11] == '⚪︎'
-    score += 8 if answers[:q12] == '⚪︎'
-    score += 8 if answers[:q13] == '⚪︎'
-    score += 8 if answers[:q14] == '⚪︎'
-    score += 8 if answers[:q15] == '⚪︎'
+    score += 5 if answers[:q1] == '正解'
+    score += 5 if answers[:q2] == '正解'
+    score += 5 if answers[:q3] == '正解'
+    score += 5 if answers[:q4] == '正解'
+    score += 5 if answers[:q5] == '正解'
+    score += 7 if answers[:q6] == '正解'
+    score += 7 if answers[:q7] == '正解'
+    score += 7 if answers[:q8] == '正解'
+    score += 7 if answers[:q9] == '正解'
+    score += 7 if answers[:q10] == '正解'
+    score += 8 if answers[:q11] == '正解'
+    score += 8 if answers[:q12] == '正解'
+    score += 8 if answers[:q13] == '正解'
+    score += 8 if answers[:q14] == '正解'
+    score += 8 if answers[:q15] == '正解'
     score
   end
 end

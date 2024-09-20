@@ -1,11 +1,18 @@
-<main class='bg-love'>
+<main class='bg-pink-100 px-3 my-0 mx-auto w-full h-full'>
   <div>
-    <h1><%= @result[15] %>の推し度は<%= @result[16] %>%です！</h1>
+    <h1 class='text-center font-bold text-lg pt-5'><%= @result[15] %>の推し度は<%= @result[16] %>%です！</h1>
+    <div class='mt-5 mx-5'>
+      <%= link_to love_maika_path do %>
+        <%= image_tag('maika2.JPEG', class: 'w-36 h-48 rounded-lg my-0 mx-auto') %>
+      <% end %>
+    </div>
     <% (0..14).each do |i| %>
-      <p>問題<%= "#{ i + 1 }" %>: <%= @result[i] %></p>
+      <p class='text-center my-5'>問題<%= "#{ i + 1 }" %>: <%= @result[i] %></p>
     <% end %>
   </div>
-  <%= link_to root_path do %>
-    <button class="btn btn-secondary w-32 tracking-[.25em]">TOPに戻る</button>
-  <% end %>
+  <div class='text-center py-10'>
+    <%= link_to root_path do %>
+      <button class="btn bg-pink-300 border-none w-32 text-white tracking-[.25em] hover:bg-pink-200 hover:opacity-50">TOPに戻る</button>
+    <% end %>
+  </div>
 </main>
