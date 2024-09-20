@@ -1,120 +1,119 @@
-<main class='bg-maika'>
-  <div>
-    <h1>佐々木舞香クイズ</h1>
-    <p>15個の問題に答えて推し度を知ろう</p>
+<main class='bg-maika px-3 my-0 mx-auto w-full'>
+  <div class='md:mx-28 pl-3 pb-10'>
+    <h1 class='text-center font-bold text-lg pt-5'>佐々木舞香クイズ</h1>
+    <p class='text-center my-5'>15個の問題に答えて推し度を知ろう</p>
     <%= form_with url:love_create_path, method: :post do %>
-    <div>
+    <div class='mb-4'>
       <label>問題1: 担当カラーは何色？</label><br>
-      <label><%= radio_button_tag 'answers[q1]', '⚪︎' %>白</label>
-      <label><%= radio_button_tag 'answers[q1]', '×' %>緑</label>
-      <label><%= radio_button_tag 'answers[q1]', '×' %>紫</label>
-      <label><%= radio_button_tag 'answers[q1]', '×' %>薄めピンク</label>
+      <label><%= radio_button_tag 'answers[q1]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>白</span></label>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>緑</span></label>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>紫</span></label>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>薄めピンク</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題2: センター曲は？</label><br>
-      <label><%= radio_button_tag 'answers[q2]', '×' %>ラブロケ</label>
-      <label><%= radio_button_tag 'answers[q2]', '×' %>ウィークエンドシトロン</label><br>
-      <label><%= radio_button_tag 'answers[q2]', '×' %>呪って呪って</label>
-      <label><%= radio_button_tag 'answers[q2]', '⚪︎' %>絶対アイドル辞めないで</label>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ラブロケ</span></label>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ウィークエンドシトロン</span></label><br>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>呪って呪って</span></label>
+      <label><%= radio_button_tag 'answers[q2]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>絶対アイドル辞めないで</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題3: 血液型は？</label><br>
-      <label><%= radio_button_tag 'answers[q3]', '⚪︎' %>A型</label>
-      <label><%= radio_button_tag 'answers[q3]', '×' %>B型</label>
-      <label><%= radio_button_tag 'answers[q3]', '×' %>O型</label>
-      <label><%= radio_button_tag 'answers[q3]', '×' %>AB型</label>
+      <label><%= radio_button_tag 'answers[q3]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>A型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>B型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>O型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>AB型</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題4: 特技は？</label><br>
-      <label><%= radio_button_tag 'answers[q4]', '×' %>イラスト</label>
-      <label><%= radio_button_tag 'answers[q4]', '⚪︎' %>絡まったネックレス絶対解ける</label><br>
-      <label><%= radio_button_tag 'answers[q4]', '×' %>目分量料理</label>
-      <label><%= radio_button_tag 'answers[q4]', '×' %>秒数を頭の中で測る</label>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>イラスト</span></label>
+      <label><%= radio_button_tag 'answers[q4]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>絡まったネックレス絶対解ける</span></label><br>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>目分量料理</span></label>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>秒数を頭の中で測る</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題5: ヒロインズの他己紹介では誰の歌詞を担当した？</label><br>
-      <label><%= radio_button_tag 'answers[q5]', '×' %>野口 衣織</label>
-      <label><%= radio_button_tag 'answers[q5]', '×' %>齋藤 樹愛羅</label>
-      <label><%= radio_button_tag 'answers[q5]', '⚪︎' %>髙松 瞳</label>
-      <label><%= radio_button_tag 'answers[q5]', '×' %>瀧脇 笙古</label>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>野口 衣織</span></label>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>齋藤 樹愛羅</span></label><br>
+      <label><%= radio_button_tag 'answers[q5]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>髙松 瞳</span></label>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>瀧脇 笙古</span></label>
     </div>
 
-    <h2>王シリーズより(2022/02/22配信)</h2>
-    <div>
+    <div class='mb-4'>
       <label>問題6: 好きなキャラクターは？</label><br>
-      <label><%= radio_button_tag 'answers[q6]', '×' %>弥生 春</label>
-      <label><%= radio_button_tag 'answers[q6]', '×' %>水無月 涙</label>
-      <label><%= radio_button_tag 'answers[q6]', '×' %>神無月 郁</label>
-      <label><%= radio_button_tag 'answers[q6]', '⚪︎' %>霜月 隼</label>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>弥生 春</span></label>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>水無月 涙</span></label>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>神無月 郁</span></label>
+      <label><%= radio_button_tag 'answers[q6]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>霜月 隼</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題7: 昔お母さんに叱られたことは？</label><br>
-      <label><%= radio_button_tag 'answers[q7]', '×' %>勉強しなさい</label>
-      <label><%= radio_button_tag 'answers[q7]', '×' %>ちゃんとしゃべりなさい</label><br>
-      <label><%= radio_button_tag 'answers[q7]', '⚪︎' %>学校に行きなさい</label>
-      <label><%= radio_button_tag 'answers[q7]', '×' %>早く寝なさい</label>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>勉強しなさい</span></label>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ちゃんとしゃべりなさい</span></label><br>
+      <label><%= radio_button_tag 'answers[q7]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>学校に行きなさい</span></label>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>早く寝なさい</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題8: 小さな自慢は？</label><br>
-      <label><%= radio_button_tag 'answers[q8]', '×' %>手先が器用</label>
-      <label><%= radio_button_tag 'answers[q8]', '⚪︎' %>初めてのことでもそつなくこなせる</label><br>
-      <label><%= radio_button_tag 'answers[q8]', '×' %>お母さんみたいに家庭的</label>
-      <label><%= radio_button_tag 'answers[q8]', '×' %>人にやさしい</label>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>手先が器用</span></label>
+      <label><%= radio_button_tag 'answers[q8]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>初めてのことでもそつなくこなせる</span></label><br>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>お母さんみたいに家庭的</span></label>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>人にやさしい</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題9: 髙松 瞳とデートに！何処に行く？</label><br>
-      <label><%= radio_button_tag 'answers[q9]', '⚪︎' %>温泉</label>
-      <label><%= radio_button_tag 'answers[q9]', '×' %>遊園地</label>
-      <label><%= radio_button_tag 'answers[q9]', '×' %>アスレチック</label>
-      <label><%= radio_button_tag 'answers[q9]', '×' %>映画</label>
+      <label><%= radio_button_tag 'answers[q9]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>温泉</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>遊園地</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>アスレチック</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>映画</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題10: 人生で一番笑った思い出は？</label><br>
-      <label><%= radio_button_tag 'answers[q10]', '×' %>樹愛羅が転んだ</label>
-      <label><%= radio_button_tag 'answers[q10]', '×' %>友達が角に足をぶつけた</label><br>
-      <label><%= radio_button_tag 'answers[q10]', '×' %>樹愛羅が大遅刻をした</label>
-      <label><%= radio_button_tag 'answers[q10]', '⚪︎' %>友達に鳥のフンが落ちた</label>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>樹愛羅が転んだ</span></label>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>友達が角に足をぶつけた</span></label><br>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>樹愛羅が大遅刻をした</span></label>
+      <label><%= radio_button_tag 'answers[q10]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>友達に鳥のフンが落ちた</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題11: 無敵カワイイ餃子女王決定戦で、餃子以外にただ自分が食べたくて焼いた食べ物は？</label><br>
-      <label><%= radio_button_tag 'answers[q11]', '×' %>豊潤</label>
-      <label><%= radio_button_tag 'answers[q11]', '⚪︎' %>香燻</label>
-      <label><%= radio_button_tag 'answers[q11]', '×' %>シャウエッセン</label>
-      <label><%= radio_button_tag 'answers[q11]', '×' %>アルトバイエルン</label>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>豊潤</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>香燻</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>シャウエッセン</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>アルトバイエルン</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題12: ダメだとわかっていても辞められない甘くて危うい好きなことは？</label><br>
-      <label><%= radio_button_tag 'answers[q12]', '×' %>ニンニクマシが好き</label><br>
-      <label><%= radio_button_tag 'answers[q12]', '×' %>UFOキャッチャーが好き</label><br>
-      <label><%= radio_button_tag 'answers[q12]', '⚪︎' %>そのまま食べる塩が好き</label><br>
-      <label><%= radio_button_tag 'answers[q12]', '×' %>カップ麺を食べて、すぐ寝るのが好き</label>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ニンニクマシが好き</span></label><br>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>UFOキャッチャーが好き</span></label><br>
+      <label><%= radio_button_tag 'answers[q12]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>そのまま食べる塩が好き</span></label><br>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>カップ麺を食べて、すぐ寝るのが好き</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題13: あの子コンプレックスで齋藤なぎさのパートを担当することになった歌詞は？</label><br>
-      <label><%= radio_button_tag 'answers[q13]', '×' %>特別じゃないから あんな顔 見せないでよ</label><br>
-      <label><%= radio_button_tag 'answers[q13]', '×' %>真っ白に戻して</label><br>
-      <label><%= radio_button_tag 'answers[q13]', '×' %>運命じゃなかった2人は</label><br>
-      <label><%= radio_button_tag 'answers[q13]', '⚪︎' %>愛なんて もういらないよ</label>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>特別じゃないから あんな顔 見せないでよ</span></label><br>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>真っ白に戻して</span></label><br>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>運命じゃなかった2人は</span></label><br>
+      <label><%= radio_button_tag 'answers[q13]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>愛なんて もういらないよ</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題14: 絶対に辞めないで欲しいことは？</label><br>
-      <label><%= radio_button_tag 'answers[q14]', '×' %>絶対 指原さんからのシャインマスカットの贈り物 辞めないで</label><br>
-      <label><%= radio_button_tag 'answers[q14]', '×' %>絶対 ハンバーガーのキッチンカー 辞めないで</label><br>
-      <label><%= radio_button_tag 'answers[q14]', '×' %>絶対 さなつんのモノマネ 辞めないで</label><br>
-      <label><%= radio_button_tag 'answers[q14]', '⚪︎' %>絶対 愛犬、隣で寝るの 辞めないで</label>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>絶対 指原さんからのシャインマスカットの贈り物 辞めないで</span></label><br>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>絶対 ハンバーガーのキッチンカー 辞めないで</span></label><br>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>絶対 さなつんのモノマネ 辞めないで</span></label><br>
+      <label><%= radio_button_tag 'answers[q14]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>絶対 愛犬、隣で寝るの 辞めないで</span></label>
     </div>
-    <div>
+    <div class='mb-4'>
       <label>問題15: イコラブクロスラブの魂で叫べ！イコラブロックという企画で斎藤 樹愛羅に向けて言った魂の叫びは？</label><br>
-      <label><%= radio_button_tag 'answers[q15]', '×' %>鶏肉と豚肉の違いがわからないこと</label><br>
-      <label><%= radio_button_tag 'answers[q15]', '⚪︎' %>マグロに火を通すとサンマになると思っている</label><br>
-      <label><%= radio_button_tag 'answers[q15]', '×' %>大根に火を通すとカブになると思っている</label><br>
-      <label><%= radio_button_tag 'answers[q15]', '×' %>フライパンを食べ物だと思っている</label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>鶏肉と豚肉の違いがわからないこと</span></label><br>
+      <label><%= radio_button_tag 'answers[q15]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>マグロに火を通すとサンマになると思っている</span></label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>大根に火を通すとカブになると思っている</span></label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>フライパンを食べ物だと思っている</span></label><br>
     </div>
     <div class='hidden'>
       <label><%= radio_button_tag 'answers[q16]', '佐々木 舞香', checked:'checked' %>佐々木 舞香</label>
     </div>
-    <div>
-      <%= submit_tag '回答する', class:'mr-5 rounded-md btn bg-yellow-600 text-white px-3 hover:bg-yellow-600 hover:opacity-50' %>
+    <div class='text-center'>
+      <%= submit_tag '回答する', class:'rounded-md btn bg-pink-300 border-none text-white px-3 mt-5 mr-5 hover:bg-pink-200 hover:opacity-50' %>
     </div>
     <% end %>
   </div>

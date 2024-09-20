@@ -1,7 +1,15 @@
-<h1>イコノイジョイ推しメンクイズ</h1>
-<p>クイズに挑戦したいグループを選ぼう！！</p>
-<%= link_to love_members_path do %>
-  <button class="btn btn-secondary w-28 tracking-[.25em]">=LOVE</button>
-<% end %>
-<button class="btn pointer-events-none w-28 tracking-[.25em] disabled:btn-success">≠ME</button>
-<button class="btn pointer-events-none w-28 tracking-[.25em] disabled:btn-warning">≒JOY</button>
+<main class='text-center bg-slate-50 px-3 my-0 mx-auto w-full h-screen'>
+  <h1 class='font-bold text-lg pt-5'><span class='text-pink-200'>イコ</span><span class='text-teal-300'>ノイ</span><span class='text-yellow-300'>ジョイ</span>推しメンクイズ</h1>
+  <p class='my-5'>クイズに挑戦したいグループを選ぼう！！</p>
+  <div class='my-20'>
+    <%= link_to love_members_path do %>
+      <button class="btn bg-pink-300 border-none w-28 text-white tracking-[.25em] hover:bg-pink-200 hover:opacity-50">=LOVE</button>
+    <% end %>
+  </div>
+  <div class='mb-20'>
+    <button class="btn pointer-events-none w-28 tracking-[.25em] disabled:btn-success">≠ME</button>
+  </div>
+  <div class='pb-10'>
+    <button class="btn pointer-events-none w-28 tracking-[.25em] disabled:btn-warning">≒JOY</button>
+  </div>
+</main>
