@@ -1,0 +1,120 @@
+<main class='bg-risa px-3 my-0 mx-auto w-full'>
+  <div class='md:mx-28 pl-3 pb-10'>
+    <h1 class='text-center font-bold text-lg pt-5'>音嶋莉沙クイズ</h1>
+    <p class='text-center my-5'>15個の問題に答えて推し度を知ろう</p>
+    <%= form_with url:love_create_path, method: :post do %>
+    <div class='mb-4'>
+      <label>問題1: 担当カラーは何色？</label><br>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>黄色×オレンジ</span></label>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>黄色×青色</span></label><br>
+      <label><%= radio_button_tag 'answers[q1]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>水色×濃いピンク</span></label>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>白色×紫色</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題2: センター曲は？</label><br>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>しゅきぴ</span></label>
+      <label><%= radio_button_tag 'answers[q2]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>お姫様にしてよ！</span></label><br>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>アイカツハッピーエンド</span></label>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>祝祭</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題3: 血液型は？</label><br>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>A型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>B型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>O型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>AB型</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題4: 特技は？</label><br>
+      <label><%= radio_button_tag 'answers[q4]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>福岡愛を語る</span></label>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>マラソン</span></label><br>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>書道</span></label>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>特にない！！</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題5: ヒロインズの他己紹介では誰の歌詞を担当した？</label><br>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>山本 杏奈</span></label>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>瀧脇 笙古</span></label><br>
+      <label><%= radio_button_tag 'answers[q5]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>諸橋 沙夏</span></label>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>佐々木 舞香</span></label>
+    </div>
+
+    <div class='mb-4'>
+      <label>問題6: イコラブ初期の頃のマイブームは？</label><br>
+      <label><%= radio_button_tag 'answers[q6]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ランドセルを見る</span></label><br>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>三つ編み</span></label><br>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>足のストレッチ</span></label><br>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>インスタで可愛い女の子を見る</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題7: ポンコツだなと思ったメンバー2位は？</label><br>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>山本 杏奈</span></label>
+      <label><%= radio_button_tag 'answers[q7]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>諸橋 沙夏</span></label><br>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>斎藤 樹愛羅</span></label>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>野口 衣織</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題8: マネージャーに内緒にしていることは？</label><br>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>髪を2cm切った</span></label><br>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>メイクさんにメイクしてもらったところを自分で手直しした</span></label><br>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>髪色を少しだけ変えた</span></label><br>
+      <label><%= radio_button_tag 'answers[q8]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>お菓子を食べていること</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題9: 瀧脇 笙古の好きなところは？</label><br>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>わかってくれるところ</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>料理が美味しい</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>写真を撮ってくれる</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>全部♡</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題10: 忘れられない=LOVEの思い出は？(2021/03時点)</label><br>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ダイリリのMV撮影</span></label>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>赤岳</span></label><br>
+      <label><%= radio_button_tag 'answers[q10]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>武道館</span></label>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>オーディション</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題11: 瀧脇 笙古に言われた、強いて言うなら直して欲しいところは？</label><br>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>優柔不断</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>洋服に食べ物をすぐこぼす</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>出かけるときにもっと調べて欲しい</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>マイペース</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題12: 明治のお菓子ダービー。一番好きはお菓子は？</label><br>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>アポロ</span></label>
+      <label><%= radio_button_tag 'answers[q12]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>たけのこの里</span></label><br>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ガルボチョコ</span></label>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>コーヒービート</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題13: Oh!Darlingで齋藤なぎさのパートを担当することになった歌詞は？</label><br>
+      <label><%= radio_button_tag 'answers[q13]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle text-sm'>誤解しないで欲しい 君だけにだよ あいらびゅ〜</label><br>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle text-sm'>特別な あたし プレゼント</span></label><br>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle text-sm'>インドの皆さん ビックリです</span></label><br>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle text-sm'>世界一のラブ しちゃいましょう</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題14: 2024年8月16日に公式チャンネルで公開されたボートレース浜名湖の7Rで的中させた組み合わせは？</label><br>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>3-2-1</span></label>
+      <label><%= radio_button_tag 'answers[q14]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>3-4-1</span></label>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>2-1-3</span></label>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>2-1-6</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題15: 音嶋 莉沙と同居したことのあるメンバーは？</label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>大場 花菜</span></label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>諸橋 沙夏</span></label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>野口 衣織</span></label><br>
+      <label><%= radio_button_tag 'answers[q15]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>佐々木 舞香</span></label><br>
+    </div>
+    <div class='hidden'>
+      <label><%= radio_button_tag 'answers[q16]', '音嶋 莉沙', checked:'checked' %>音嶋 莉沙</label>
+    </div>
+    <div class='text-center'>
+      <%= submit_tag '回答する', class:'rounded-md btn bg-pink-300 border-none text-white px-3 mt-5 mr-5 hover:bg-pink-200 hover:opacity-50' %>
+    </div>
+    <% end %>
+  </div>
+</main>
