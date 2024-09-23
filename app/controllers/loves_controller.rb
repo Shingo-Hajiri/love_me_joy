@@ -9,6 +9,8 @@ class LovesController < ApplicationController
 
   def maika; end
 
+  def risa; end
+
   def result
     @result = params[:result]
   end
