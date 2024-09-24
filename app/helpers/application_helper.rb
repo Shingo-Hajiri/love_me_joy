@@ -7,6 +7,8 @@ module ApplicationHelper
       'risa2.JPEG'
     when '諸橋 沙夏'
       'sana2.JPEG'
+    when '髙松 瞳'
+      'hitomi2.JPEG'
     end
   end
 end
