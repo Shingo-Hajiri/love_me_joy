@@ -11,6 +11,10 @@ class LovesController < ApplicationController
 
   def risa; end
 
+  def sana; end
+
+  def hitomi; end
+
   def result
     @result = params[:result]
   end

@@ -4,7 +4,9 @@ module ApplicationHelper
     when '佐々木 舞香'
       'maika2.JPEG'
     when '音嶋 莉沙'
-      'risa.JPEG'
+      'risa2.JPEG'
+    when '諸橋 沙夏'
+      'sana2.JPEG'
     end
   end
 end
