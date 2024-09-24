@@ -22,6 +22,16 @@
   width: 100%;
 }
 
+.bg-sana {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(bg_sana.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
 .bg-love {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(bg_love.jpg);
   background-repeat: no-repeat;
