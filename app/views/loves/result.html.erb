@@ -11,8 +11,18 @@
     <% end %>
   </div>
   <div class='text-center py-10'>
-    <%= link_to root_path do %>
+    <%= link_to root_path, id:"back-to-top" do %>
       <button class="btn bg-pink-300 border-none w-32 text-white tracking-[.25em] hover:bg-pink-200 hover:opacity-50">TOPに戻る</button>
     <% end %>
   </div>
 </main>
+
+<script>
+  document.getElementById('back-to-top').addEventListener('click', (event) => {
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+      audio = null; // 完全にリセット
+    }
+  });
+</script>
