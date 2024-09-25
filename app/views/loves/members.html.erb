@@ -57,7 +57,7 @@
   document.addEventListener("turbo:load", () => {
     if (window.location.pathname === '<%= love_members_path %>') {
       if (!window.audio) {
-        audio = new Audio('/assets/audios/maou_14_shining_star.mp3');
+        audio = new Audio('<%= asset_path("maou_14_shining_star.mp3") %>');
         audio.loop = true;
       }
       window.audio.play().catch(error => console.log(error));
