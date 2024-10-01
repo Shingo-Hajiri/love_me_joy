@@ -7,9 +7,13 @@
     <% end %>
   </div>
   <div class='mb-20'>
-    <button class="btn pointer-events-none w-28 tracking-[.25em] disabled:btn-success">≠ME</button>
+    <%= link_to me_members_path do %>
+      <button class="btn bg-teal-300 border-none w-28 text-white tracking-[.25em] hover:bg-teal-300 hover:opacity-50">≠ME</button>
+    <% end %>
   </div>
   <div class='pb-10'>
-    <button class="btn pointer-events-none w-28 tracking-[.25em] disabled:btn-warning">≒JOY</button>
+    <%= link_to joy_members_path do %>
+      <button class="btn bg-yellow-300 border-none w-28 text-white tracking-[.25em] hover:bg-yellow-300 hover:opacity-50">≒JOY</button>
+    <% end %>
   </div>
 </main>
