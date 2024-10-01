@@ -1,0 +1,80 @@
+<main class='bg-teal-100 px-3 my-0 mx-auto w-full'>
+  <h1 class='text-center font-bold text-lg pt-5'>推しメンセレクト</h1>
+  <p class='text-center my-5'>クイズにチャレンジしたい推しメンを選ぼう！！</p>
+  <div class='grid grid-cols-2 gap-2 text-center pb-10'>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>尾木 波菜</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>落合 希来里</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>蟹沢 萌子</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>河口 夏音</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>川中子 奈月心</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>櫻井 もも</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>菅波 美鈴</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>鈴木 瞳美</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>谷崎 早耶</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>冨田 菜々風</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>永田 詩央里</p>
+    </div>
+    <div class='mt-5 mx-5'>
+      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+      <p class='pt-2'>本田 珠由記</p>
+    </div>
+  </div>
+  <div class='text-center py-10'>
+    <%= link_to root_path, id:"back-to-top" do %>
+      <button class="btn bg-teal-300 border-none w-32 text-white tracking-[.25em] hover:bg-teal-200 hover:opacity-50">TOPに戻る</button>
+    <% end %>
+  </div>
+</main>
+
+<script>
+  document.addEventListener("turbo:load", () => {
+    if (window.location.pathname === '<%= me_members_path %>') {
+      if (!window.audio) {
+        audio = new Audio('<%= asset_path("maou_14_shining_star.mp3") %>');
+        audio.loop = true;
+      }
+      window.audio.play().catch(error => console.log(error));
+    }
+  });
+
+  document.getElementById('back-to-top').addEventListener('click', (event) => {
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+      audio = null; // 完全にリセット
+    }
+  });
+</script>
+
