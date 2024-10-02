@@ -2,10 +2,16 @@ class JoysController < ApplicationController
   before_action :set_params, only: %i[create]
   def create
     @result << scoring(@answers)
-    redirect_to love_result_path(result: @result)
+    redirect_to joy_result_path(result: @result)
   end
 
   def members; end
+
+  def konoa; end
+
+  def result
+    @result = params[:result]
+  end
 
   private
   def set_params

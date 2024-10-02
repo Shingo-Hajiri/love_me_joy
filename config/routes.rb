@@ -30,5 +30,6 @@ Rails.application.routes.draw do
   get "me/miruten", to: "mes#miruten", as: "me_miruten"
   get "me/result", to: "mes#result", as: "me_result"
 
+  get "joy/konoa", to: "joys#konoa", as: "joy_konoa"
   get "joy/result", to: "joys#result", as: "joy_result"
 end
