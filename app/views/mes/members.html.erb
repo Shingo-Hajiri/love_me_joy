@@ -47,8 +47,10 @@
       <p class='pt-2'>永田 詩央里</p>
     </div>
     <div class='mt-5 mx-5'>
-      <%= image_tag('comingsoon2.png', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
-      <p class='pt-2'>本田 珠由記</p>
+      <%= link_to me_miruten_path do %>
+        <%= image_tag('miruten.JPEG', class: 'w-28 h-40 rounded-lg my-0 mx-auto') %>
+        <p class='pt-2'>本田 珠由記</p>
+      <% end %>
     </div>
   </div>
   <div class='text-center py-10'>

@@ -11,4 +11,11 @@ module ApplicationHelper
       'hitomi2.JPEG'
     end
   end
+
+  def me_result_image(member)
+    case member
+    when '本田 珠由記'
+      'miruten2.JPEG'
+    end
+  end
 end
