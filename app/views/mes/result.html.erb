@@ -1,8 +1,8 @@
-<main class='bg-pink-100 px-3 my-0 mx-auto w-full h-full'>
+<main class='bg-teal-100 px-3 my-0 mx-auto w-full h-full'>
   <div>
     <h1 class='text-center font-bold text-lg pt-5'><%= @result[15] %>の推し度は<%= @result[16] %>%です！</h1>
     <div class='mt-5 mx-5'>
-      <%= image_tag result_image(@result[15]) , class: 'w-36 h-48 rounded-lg my-0 mx-auto' %>
+      <%= image_tag me_result_image(@result[15]) , class: 'w-36 h-48 rounded-lg my-0 mx-auto' %>
     </div>
     <% (0..14).each do |i| %>
       <p class='text-center my-5'>問題<%= "#{ i + 1 }" %>: <%= @result[i] %></p>
@@ -10,7 +10,7 @@
   </div>
   <div class='text-center py-10'>
     <%= link_to root_path, id:"back-to-top" do %>
-      <button class="btn bg-pink-300 border-none w-32 text-white tracking-[.25em] hover:bg-pink-200 hover:opacity-50">TOPに戻る</button>
+      <button class="btn bg-teal-300 border-none w-32 text-white tracking-[.25em] hover:bg-teal-100 hover:opacity-50">TOPに戻る</button>
     <% end %>
   </div>
 </main>

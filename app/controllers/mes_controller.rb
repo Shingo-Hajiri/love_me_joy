@@ -2,10 +2,16 @@ class MesController < ApplicationController
   before_action :set_params, only: %i[create]
   def create
     @result << scoring(@answers)
-    redirect_to love_result_path(result: @result)
+    redirect_to me_result_path(result: @result)
   end
 
   def members; end
+
+  def miruten; end
+
+  def result
+    @result = params[:result]
+  end
 
   private
   def set_params

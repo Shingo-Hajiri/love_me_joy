@@ -26,4 +26,9 @@ Rails.application.routes.draw do
   get "love/sana", to: "loves#sana", as: "love_sana"
   get "love/hitomi", to: "loves#hitomi", as: "love_hitomi"
   get "love/result", to: "loves#result", as: "love_result"
+
+  get "me/miruten", to: "mes#miruten", as: "me_miruten"
+  get "me/result", to: "mes#result", as: "me_result"
+
+  get "joy/result", to: "joys#result", as: "joy_result"
 end
