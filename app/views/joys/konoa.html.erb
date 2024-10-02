@@ -1,0 +1,120 @@
+<main class='bg-konoa px-3 my-0 mx-auto w-full'>
+  <div class='md:mx-28 pl-3 pb-10'>
+    <h1 class='text-center font-bold text-lg pt-5'>天野香乃愛クイズ</h1>
+    <p class='text-center my-5'>15個の問題に答えて推し度を知ろう</p>
+    <%= form_with url:joy_create_path, method: :post do %>
+    <div class='mb-4'>
+      <label>問題1: 担当カラーは何色？</label><br>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>黄色×赤</span></label>
+      <label><%= radio_button_tag 'answers[q1]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>薄紫×黄色</span></label><br>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>紫</span></label>
+      <label><%= radio_button_tag 'answers[q1]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>黄緑×水色</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題2: センター曲は？</label><br>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>超孤独ライオン</span></label><br>
+      <label><%= radio_button_tag 'answers[q2]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>スイートシックスティーン</span></label><br>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>今日も君の夢を見たんだ</span></label><br>
+      <label><%= radio_button_tag 'answers[q2]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>大空、ビュンと</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題3: 血液型は？</label><br>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>A型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>B型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>O型</span></label>
+      <label><%= radio_button_tag 'answers[q3]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>AB型</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題4: 特技は？</label><br>
+      <label><%= radio_button_tag 'answers[q4]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>口を動かずに話す</span></label>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>メイク</span></label><br>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ウインク</span></label>
+      <label><%= radio_button_tag 'answers[q4]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>地元愛を語る</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題5: 苦手なことは？</label><br>
+      <label><%= radio_button_tag 'answers[q5]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>球技</span></label>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>お化け屋敷</span></label><br>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ジェットコースター</span></label>
+      <label><%= radio_button_tag 'answers[q5]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>怖い話</span></label>
+    </div>
+
+    <div class='mb-4'>
+      <label>問題6: 子どもの頃にハマっていたことは？</label><br>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>秘密基地づくり</span></label>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ブランコ</span></label><br>
+      <label><%= radio_button_tag 'answers[q6]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>たい焼きごっこ</span></label>
+      <label><%= radio_button_tag 'answers[q6]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ブランケットを体に巻く</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題7: 好きな調味料は？</label><br>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>みそ</span></label>
+      <label><%= radio_button_tag 'answers[q7]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ポン酢</span></label>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>七味</span></label>
+      <label><%= radio_button_tag 'answers[q7]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>めんつゆ</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題8: これやっているのたぶん私だけたぶん私だけ！ってことは？</label><br>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>寝るまでのスケジュールを毎日立てている</span></label><br>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>分単位でスケジュールを立てている</span></label><br>
+      <label><%= radio_button_tag 'answers[q8]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ジムの契約をしているが、お風呂だけのために行っている</span></label><br>
+      <label><%= radio_button_tag 'answers[q8]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>食べたものを全部メモ帳に書いている</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題9: 初めて会った人のどこを一番最初に見る？</label><br>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>鼻</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>メイク</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>目</span></label>
+      <label><%= radio_button_tag 'answers[q9]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>髪</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題10: 小澤愛実と2人で海外旅行へ！どこに行く？</label><br>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>フィリピン</span></label>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>インド</span></label>
+      <label><%= radio_button_tag 'answers[q10]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>タイ</span></label>
+      <label><%= radio_button_tag 'answers[q10]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>韓国</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題11: サンリオピューロランドで買ったカチューシャはどのキャラクターのもの？</label><br>
+      <label><%= radio_button_tag 'answers[q11]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>クロミ</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ハローキティ</span></label><br>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>マイメロ</span></label>
+      <label><%= radio_button_tag 'answers[q11]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>シナモンロール</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題12: おつかい伝言ゲームで大西葵のお題に対して、天野香乃愛の回答は？</label><br>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>大麦と小澤愛実</span></label><br>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>だいこんサラダ</span></label><br>
+      <label><%= radio_button_tag 'answers[q12]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>水あめ・シャンプー・じゃがりこ・カプリコ</span></label><br>
+      <label><%= radio_button_tag 'answers[q12]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>プリンケーキ</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題13: クレーンゲームで取れた景品の数は？</label><br>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>3個</span></label>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>4個</span></label>
+      <label><%= radio_button_tag 'answers[q13]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>5個</span></label>
+      <label><%= radio_button_tag 'answers[q13]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>6個</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題14: マイブランケットの名前は？</label><br>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ぴょんぴょん</span></label>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ぱたぱた</span></label><br>
+      <label><%= radio_button_tag 'answers[q14]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>すぽんすぽん</span></label>
+      <label><%= radio_button_tag 'answers[q14]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>ころんころん</span></label>
+    </div>
+    <div class='mb-4'>
+      <label>問題15: YouTube企画でやりたいことは？</label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>廃墟巡り</span></label>
+      <label><%= radio_button_tag 'answers[q15]', '正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>人工サーフィン</span></label><br>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>無人島生活</span></label>
+      <label><%= radio_button_tag 'answers[q15]', '不正解', class:'radio radio-secondary bg-white scale-50 align-middle pt-2 mr-1 ml-2' %><span class='align-middle'>気配切り</span></label>
+    </div>
+    <div class='hidden'>
+      <label><%= radio_button_tag 'answers[q16]', '天野 香乃愛', checked:'checked' %>天野 香乃愛</label>
+    </div>
+    <div class='text-center'>
+      <%= submit_tag '回答する', class:'rounded-md btn bg-yellow-300 border-none text-white px-3 mt-5 mr-5 hover:bg-yellow-200 hover:opacity-50' %>
+    </div>
+    <% end %>
+  </div>
+</main>

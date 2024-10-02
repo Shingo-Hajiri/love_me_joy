@@ -18,4 +18,11 @@ module ApplicationHelper
       'miruten2.JPEG'
     end
   end
+
+  def joy_result_image(member)
+    case member
+    when '天野 香乃愛'
+      'konoa2.JPEG'
+    end
+  end
 end
